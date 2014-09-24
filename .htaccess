@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine	On
+  #RewriteBase /trip
+  
+  RewriteRule   ^([^/]+)/([^/]+)/(.+)$                  index.php?module=$1&id=$2&action=$3     [QSA]
+  #RewriteRule   ^([^/]+)/([\.a-zA-Z0-9_\-,]+)/(.+)$     index.php?module=$1&id=$2&action=$3     [QSA]
+  RewriteRule   ^([^/]+)/([\.a-zA-Z0-9_\-,]+)$          index.php?module=$1&id=$2               [QSA]
+  RewriteRule   ^([^/]+)/([\.a-zA-Z_]+)$                index.php?module=$1&action=$2           [QSA]
+  RewriteRule   ^([a-zA-Z]+)$                           index.php?module=$1                     [QSA]
+</IfModule>
+
+# Disable Magic Quotes
+php_value magic_quotes_gpc false
+
+# Dynamic CSS
+#AddType application/x-httpd-php .css
+
+## Uncomment these lines if you wish to show all errors on the screen.
+#php_value display_errors 1
+#php_value error_reporting 2047

@@ -1,0 +1,2 @@
+#/usr/local/php5/bin/php /usr/local/php5/lib/php/DB/DataObject/createTables.php conf/config.ini
+php /usr/share/pear/DB/DataObject/createTables.php conf/config.ini

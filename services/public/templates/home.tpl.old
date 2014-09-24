@@ -1,0 +1,98 @@
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="container">
+
+          <div class="inner cover">
+          
+            <h1 class="cover-heading">Discover your next destination</h1>
+
+            <form class="form-horizontal" role="form" action="results.html">
+              <div class="form-group">
+                <div class="input-group tt-input-group">
+                  <input type="text" class="form-control autocomplete" id="focusInput" placeholder="city or country name..." autocomplete="off">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-info" tabindex="-1">Search</button>
+                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Advanced Search</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>            
+            </form>            
+
+            <div class="row">
+
+              <div class="col-lg-8">
+                <h3>Trending Destinations</h3>
+              
+              </div>
+
+              <div class="col-lg-4">
+                <h3>Get Started Now!</h3>
+                <form class="form" action="/trip/account/new" method="post">
+                  <fieldset>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block"><span class="fa fa-facebook"></span> &nbsp; Login with Facebook</button>
+                    </div>
+                    <div class="form-group"><small>OR</small</div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" class="form-control" name="fname" id="inputFirst" placeholder="first name">
+                        <span class="input-group-addon fa fa-user"></span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" class="form-control" name="lname" id="inputLast" placeholder="last name">
+                        <span class="input-group-addon fa fa-user"></span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" class="form-control" name="email" id="inputEmail" placeholder="email">
+                        <span class="input-group-addon fa fa-envelope"></span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="password" class="form-control" name="password" id="inputPassword" placeholder="password">
+                        <span class="input-group-addon fa fa-lock"></span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="password" class="form-control" name="password2" id="inputPassword2" placeholder="confirm password">
+                        <span class="input-group-addon fa fa-lock"></span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-info btn-block">Create Your Account</button>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="navbar navbar-default footer">
+              <p class="navbar-text pull-left">&copy; Copyright TrotTrot 2014.</p>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Cookies</a></li>                
+              </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
